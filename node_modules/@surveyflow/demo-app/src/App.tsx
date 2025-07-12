@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   const loadMetrics = async () => {
     try {
-      const response = await fetch('/api/surveys/survey-1/metrics');
+      const response = await fetch('http://localhost:3001/api/surveys/survey-1/metrics');
       if (!response.ok) throw new Error('Failed to fetch metrics');
       
       const data = await response.json();
