@@ -5,6 +5,7 @@
   "workspaces": ["sdk", "backend", "app"],
   "scripts": {
     "dev": "npm run dev --workspaces",
-    "build": "npm run build --workspaces"
-  }
+    "build": "cd app && npm run build"
+  },
+  "workspaces": ["sdk", "backend", "app"]
 }
